@@ -16,9 +16,9 @@ public class AdjacencyListGraph {
     public void removeEdge(int i,int j){
         graph[i].remove(j);
     }
-    public void printGraph(){
+    public void printRepresentation(){
         for(int i=0;i<numOfVertices;i++){
-            System.out.print(i+"-");
+            System.out.print(i+"->");
             for(int j=0;j<graph[i].size();j++){
                 System.out.print(graph[i].get(j)+" ");
             }

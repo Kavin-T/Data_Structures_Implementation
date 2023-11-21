@@ -1,8 +1,7 @@
 import Data_Structures.*;
-import Data_Structures.AdjacencyListGraph;
 public class Main {
     public static void main(String[] args) {
-        AdjacencyListGraph g=new AdjacencyListGraph(5);
+        AdjacencyMatrixGraph g=new AdjacencyMatrixGraph(5);
         g.addEdge(0,1);
         g.addEdge(0,2);
         g.addEdge(1,0);
@@ -15,7 +14,7 @@ public class Main {
         g.addEdge(3,1);
         g.addEdge(4,2);
         g.addEdge(4,3);
-        g.printGraph();
+        g.printRepresentation();
         g.BFS();
     }
 }
